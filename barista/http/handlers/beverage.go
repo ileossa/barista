@@ -21,7 +21,6 @@ var beverages = []beverage{
 }
 
 // @BasePath /api/v1
-
 // GetBeverages godoc
 // @Summary GetBeverages responds with the list of all beverages as JSON
 // @Schemes
@@ -31,7 +30,6 @@ var beverages = []beverage{
 // @Produce json
 // @Success 200 {struct} beverage
 // @Router /menus [get]
-
 func GetBeverages(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, beverages)
 }
