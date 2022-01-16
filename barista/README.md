@@ -1,7 +1,7 @@
 # Nom : barista world ou bien le monde du barista
 
 Le but de ce repo est de rassembler au même endroit les différents tests, poc et snippet que j'ai réalisé.
-Généralement lorsque j'ai une idée, il me manque toujours un environnement, un project, quelque chose qui existe déjà sur lequel je peux m'appuyer pour mettre en pratique directement ma pensée. 
+Généralement lorsque j'ai une idée, il me manque toujours un environnement, un projet, quelque chose qui existe déjà sur lequel je peux m'appuyer pour mettre en pratique directement ma pensée. 
 
 J'ai souhaiter mettre en place ce repository à la suite d'un test technique. J'ai voulus apprendre d'avantage la programation en GO, c'est pour cela que le projet `barist world` est né.
 
@@ -35,6 +35,7 @@ Pour démarrer le service en local avec la configuration local, voir la section 
 make run dev
 ```
 Le service va s’exécuter et lancer les différentes images docker nécessaire.
+
 Ouvrir le navigateur à l’adresse [http://localhost:8080/api/v1/ping](http://localhost:8080/api/v1/ping)
 
 # Architecture
@@ -66,10 +67,12 @@ mettre une image de l'architecture du project
 # Documentation
 
 ```bash
-make run [env]  #env: run application with a configuration environement name (like dev, pre-prod,prod)
-make package : build docker image with last version of project.
-make publish-images : push latest's tag docker image on dockerhub
-make doc : push into publish/documentation branch documentation generate with swag tool
+- make run [env]  #env: run application with a configuration environement name (like dev, pre-prod,prod)
+
+- make package : build docker image with last version of project.
+make publish-images : push latest\'s tag docker image on dockerhub
+
+- make doc : push into publish/documentation branch documentation generate with swag tool
 
 ```
 
